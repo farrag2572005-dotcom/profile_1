@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for a junior frontend developer building responsive, accessible, and polished digital experiences."
+    />
+    <title>[YOUR NAME] | Junior Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="topbar container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Go to homepage">
+          <span class="brand-mark">F</span>
+          <span class="brand-name">Fares</span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="nav-menu">
+          <ul class="main-nav" aria-label="Primary navigation">
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+
+          <div class="lang-switcher" aria-label="Language switcher">
+            <button class="lang-btn active" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <button class="lang-btn" type="button" data-lang="ar" aria-pressed="false">عربي</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <div class="status-pill" data-i18n="hero.status">Open to Junior Opportunities</div>
+            <p class="hero-identity" data-i18n="hero.identity">Fares / FRONTEND DEVELOPER</p>
+            <p class="eyebrow" data-i18n="hero.eyebrow">BUILDING FOR THE WEB</p>
+            <h1 data-i18n="hero.title">Turning Ideas Into Thoughtful Digital Experiences.</h1>
+            <p class="lead" data-i18n="hero.description">
+              I’m a junior frontend developer focused on building responsive, accessible, and visually refined web experiences with HTML, CSS, and JavaScript.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#projects" data-i18n="hero.primaryCta">Explore My Work</a>
+              <a class="btn btn-secondary" href="mailto:[YOUR EMAIL]" data-i18n="hero.secondaryCta">Get in Touch</a>
+            </div>
+
+            <div class="tech-signature" aria-label="Current technologies">
+              <span>HTML</span>
+              <span>/</span>
+              <span>CSS</span>
+              <span>/</span>
+              <span>JAVASCRIPT</span>
+            </div>
+          </div>
+
+          <div class="hero-art">
+            <div class="hero-photo-frame">
+              <img
+                class="hero-photo"
+                src="image/WhatsApp%20Image%202026-10-17%20at%203.54.47%20PM.jpeg"
+                alt="Portrait of a junior frontend developer"
+              />
+              <div class="floating-card one">
+                <span class="mini-label">UI</span>
+                <strong>Clean</strong>
+              </div>
+              <div class="floating-card two">
+                <span class="mini-label">UX</span>
+                <strong>Thoughtful</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-label="Scroll down">
+          <span></span>
+        </div>
+      </section>
+
+      <section id="about" class="section neutral-section">
+        <div class="container about-wrap">
+          <div class="section-heading">
+            <p class="section-kicker" data-i18n="about.kicker">About</p>
+            <h2 data-i18n="about.title">Building thoughtful interfaces one detail at a time.</h2>
+          </div>
+
+          <div class="about-content">
+            <div class="about-copy">
+              <p data-i18n="about.text1">
+                I’m a junior frontend developer who enjoys turning ideas into clean, interactive web interfaces. I’m building my skills in HTML, CSS, and JavaScript, with a strong interest in responsive design, accessibility, and writing maintainable code.
+              </p>
+              <p data-i18n="about.text2">
+                I believe good interfaces should look thoughtful, feel intuitive, and work well across devices. Every project is an opportunity to learn, refine, and create experiences that feel considered from the first click to the final interaction.
+              </p>
+
+              <div class="about-highlights">
+                <div>
+                  <strong data-i18n="about.highlight1Title">Current focus</strong>
+                  <span data-i18n="about.highlight1Text">Responsive layouts and accessible interfaces</span>
+                </div>
+                <div>
+                  <strong data-i18n="about.highlight2Title">Learning mindset</strong>
+                  <span data-i18n="about.highlight2Text">Improving structure, clarity, and usability</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-visual" aria-hidden="true">
+              <div class="process-card">
+                <div class="process-item">
+                  <span class="process-index">01</span>
+                  <div>
+                    <strong data-i18n="about.process1">Research</strong>
+                    <small data-i18n="about.process1Text">Context and user needs</small>
+                  </div>
+                </div>
+                <div class="process-item">
+                  <span class="process-index">02</span>
+                  <div>
+                    <strong data-i18n="about.process2">Design</strong>
+                    <small data-i18n="about.process2Text">Hierarchy and visual rhythm</small>
+                  </div>
+                </div>
+                <div class="process-item">
+                  <span class="process-index">03</span>
+                  <div>
+                    <strong data-i18n="about.process3">Build</strong>
+                    <small data-i18n="about.process3Text">Accessible, responsive interfaces</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading align-left">
+            <p class="section-kicker" data-i18n="skills.kicker">Skills</p>
+            <h2 data-i18n="skills.title">Core technologies and fundamentals</h2>
+          </div>
+
+          <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section neutral-section">
+        <div class="container">
+          <div class="section-heading align-left">
+            <p class="section-kicker" data-i18n="projects.kicker">Projects</p>
+            <h2 data-i18n="projects.title">Selected work and practice builds</h2>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-wrap">
+          <div class="contact-copy">
+            <p class="section-kicker" data-i18n="contact.kicker">Contact</p>
+            <h2 data-i18n="contact.title">Let’s build something thoughtful.</h2>
+            <p data-i18n="contact.description">
+              I’m currently looking for beginner-friendly opportunities where I can contribute, learn, and grow as a frontend developer.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-label" data-i18n="contact.locationLabel">Location</span>
+                <a href="#">[YOUR CITY, COUNTRY]</a>
+              </li>
+              <li>
+                <span class="contact-label" data-i18n="contact.emailLabel">Email</span>
+                <a href="mailto:[YOUR EMAIL]">[YOUR EMAIL]</a>
+              </li>
+              <li>
+                <span class="contact-label" data-i18n="contact.githubLabel">GitHub</span>
+                <a href="[YOUR GITHUB URL]" target="_blank" rel="noreferrer">[YOUR GITHUB URL]</a>
+              </li>
+              <li>
+                <span class="contact-label" data-i18n="contact.linkedinLabel">LinkedIn</span>
+                <a href="[YOUR LINKEDIN URL]" target="_blank" rel="noreferrer">[YOUR LINKEDIN URL]</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name" data-i18n="contact.nameLabel">Name</label>
+              <input id="name" name="name" type="text" />
+            </div>
+
+            <div class="field">
+              <label for="email" data-i18n="contact.emailInputLabel">Email</label>
+              <input id="email" name="email" type="email" />
+            </div>
+
+            <div class="field">
+              <label for="message" data-i18n="contact.messageLabel">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+
+            <button class="btn btn-primary full-width" type="submit" data-i18n="contact.submit">Send Message</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer.text">© 2025 Fares — Junior Frontend Developer</p>
+        <a href="#home" data-i18n="footer.backToTop">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
